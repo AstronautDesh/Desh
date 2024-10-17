@@ -1,0 +1,246 @@
+/* For small devices (max-width: 575.98px) */
+@media (max-width: 575.98px) {
+  .styled-container {
+    background-color: orangered;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .home-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .title-section {
+    visibility: hidden; /* Hides title in this view */
+  }
+
+  .float-grid {
+    padding: 0.5rem;
+    font-family: var(--font-family);
+    margin-top: -8rem; /* Adjust margin to fit */
+    width: 100%;
+  }
+
+  .circular-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle(50%);
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .info-name, .info-title, .info-description {
+    margin-left: 1rem;
+    font-size: 1.1rem; /* Slightly smaller font for small screens */
+  }
+
+  .info-name {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  .info-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .info-description {
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+
+  .location {
+    color: white;
+    text-shadow: 0.1rem 0.1rem rgb(36, 12, 3);
+  }
+}
+
+/* For larger screens (min-width: 576px) */
+@media (min-width: 576px) {
+  .styled-container {
+    background-color: wheat;
+  }
+  .home-grid{
+    width: 95%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2.5rem;
+    position: relative;
+  }
+
+  .author-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20%; /* Centers the text from left side */
+    margin: 0;
+    padding: 0;
+    width: 30%;
+  }
+
+  .home-img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+  }
+
+  .float-grid {
+    padding: 0;
+    font-family: var(--font-family);
+    width: 300px;
+    margin-top: -5rem;
+  }
+
+  .info-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0px 1rem;
+  }
+
+  .info-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 0px 1rem;
+  }
+
+  .info-description {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    width: 100%;
+    padding: 1.5rem;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0px .5rem;
+  }
+  
+  .info-description:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 10px 30px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+
+  .location {
+    color: black;
+    text-shadow: none;
+  }
+
+  .title-section{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20rem;
+  }
+
+  .title {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: .4rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+    margin: 0px .7rem;
+    padding: 0px .9rem;
+  }
+  
+  .title:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 10px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+  }
+  
+  .title-word {
+    font-size: 7rem;
+    font-weight: bold;
+    margin: .5rem 0px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .title-word:hover {
+    color: orangered; /* Change color on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+  }
+  
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (min-width: 884px) {
+  .styled-container {
+    padding: 2rem;
+    height: 100vh;
+  }
+  .home-grid{
+    width: 95%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+  }
+  .author-section {
+    width: 40%;
+  }
+  .home-img {
+    width: 100px;
+    top: .1rem;
+    left: .2rem;
+  }
+  .float-grid {
+    padding-top: 1rem;
+    width: 450px;
+    margin-top: 0px;
+  }
+  .info-name {
+    font-size: 1.9rem;
+    padding-top:2rem;
+  }
+  .info-title {
+    letter-spacing: .2rem;
+  }
+
+  .info-description {
+    font-size: 1.8rem;
+  }
+
+  .location {
+    color: rgb(78, 26, 7);
+    text-shadow: none;
+  }
+
+  .title-section{
+    width: 60%;
+    padding-top: 0px;
+  }
+
+ 
+  .title {
+    margin: 0px .2rem;
+    padding: 0px .2rem;
+    width: max-content;
+    height: max-content;
+    padding: .7rem;
+  }
+  .title-word {
+    font-size: 8rem;
+    color: black;
+    line-height: .9;
+  }
+}

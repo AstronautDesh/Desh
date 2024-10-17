@@ -1,0 +1,73 @@
+/* NavLink styles */
+  @media screen and (max-width: 575.98px) {
+    .navmenu{
+      width: 100%;
+      height: fit-content;
+      background-color: orangered;
+      overflow-x: hidden;
+    }
+    
+    .nav-link {
+      font-family: var(--font-family);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      padding: .5rem;
+      font-weight: bold;
+    }
+    
+    .nav-link:hover {
+      color: wheat;
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    .navmenu{
+      width: 100%;
+      overflow-x: hidden;
+      background-color: wheat;
+    }
+
+    .nav-link {
+      font-family: var(--font-family);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: black;
+      text-decoration: none;
+      margin-right:2rem;
+      padding: .5rem;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      color: white;
+      background-color: orangered;
+    }
+  }
+
+  @media screen and (min-width: 884px) {
+    .navmenu{
+      overflow-x: hidden;
+      background-color: wheat;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: black;
+      text-decoration: none;
+      margin-right: 2rem;
+      padding: .5rem;
+      font-weight: bold;
+      width: 100%;
+    }
+
+    .nav-link:hover {
+      color: white;
+      background-color: orangered;
+    }
+  }

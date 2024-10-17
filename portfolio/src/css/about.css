@@ -1,0 +1,167 @@
+@media screen and (max-width: 575.98px) {
+    .about {
+      background-color: orangered;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    .about-container {
+      width: 95%;
+      height: auto;
+      padding: 0.5rem;
+    }
+  
+    .about-content {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .about-me-title {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.6rem;
+      line-height: 1.1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .brand {
+      font-weight: bold;
+      font-size: 0.9rem;
+      margin-top: 0.9rem;
+      color: whitesmoke;
+    }
+  
+    .about-text-wrapper {
+      position: relative;
+    }
+  
+    .about-me {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+    .about-image {
+      width: 100px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 50%;
+      shape-outside: circle(50%);
+      float: right;
+      margin-top: -2rem;
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    .about {
+      background-color: wheat;
+      padding: 2rem;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    .about-container {
+      width: 75%;
+      height: auto;
+      padding: 0.5rem;
+    }
+  
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .about-me-title {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.7rem;
+      letter-spacing: .4rem;
+      line-height: 1.1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .brand {
+      font-weight: bold;
+      font-size: 1.4rem;
+      margin-top: 0.9rem;
+      color: orangered;
+    }
+  
+    .about-text-wrapper {
+      position: relative;
+    }
+  
+    .about-me {
+      font-size: 1.4rem;
+      letter-spacing: .2rem;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+    .about-image {
+      float: right;
+      shape-outside: circle(50%);
+      shape-margin: 1rem;
+      margin-top: -4rem;
+      margin-left: 5rem;
+      width: 100px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .about-image {
+      width: 150px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: .5rem;
+    }
+  }
+
+  @media screen and (min-width: 884px) {
+    .about {
+      background-color: wheat;
+      padding: 1rem;
+    }
+    .about-content {
+      padding: 1rem;
+      height: fit-content;
+      border: 2px solid;
+      border-bottom-right-radius: 2rem;
+    }
+  
+    .brand {
+      color: rgb(105, 34, 8);
+    }
+  
+    .about-text-wrapper {
+      position: relative;
+    }
+  
+    .about-me {
+      font-size: 1.4rem;
+      letter-spacing: .2rem;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+    .about-image {
+      float: right;
+      shape-outside: circle(50%);
+      shape-margin: 1rem;
+      margin-top: -4rem;
+      margin-left: 5rem;
+      width: 100px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }

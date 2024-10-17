@@ -1,0 +1,44 @@
+/* App.css */
+
+@font-face {
+  font-family: Muli;
+  src: url(./Asset/Fonts/Muli-Light.woff2);
+}
+
+:root {
+  --font-family: Muli;
+}
+body, html{
+  font-family: var(--font-family);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+.navmenu{
+  font-family: var(--font-family);
+  width: 100%;
+}
+
+.styled-container,
+.about,
+.work,
+.contact{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  position: relative;
+}
