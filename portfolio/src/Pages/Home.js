@@ -19,16 +19,7 @@ const Home = () => {
   return (
     <div className="styled-container">
       <div className='home-grid'>
-      {/* Title Section */}
-      <div className="title-section">
-      <h1 className="title">
-        <Link to="/work" className="title-word">WORK</Link>
-        <Link to="/about" className="title-word">ABOUT</Link>
-        <Link to="/contact" className="title-word">CONTACT</Link>
-      </h1>
-    </div>
-
-      {/* Float Grid Section */}
+          {/* Float Grid Section */}
       <div className="float-grid author-section">
         <img src={imagine} alt="Desheye's Work" className="img-fluid circular-image home-img" />
         <p className="info-name">Desheye</p>
@@ -40,7 +31,17 @@ const Home = () => {
           <span className="location">Lagos, Nigeria.</span>
         </p>
       </div>
-      </div>
+     
+
+      {/* Title Section */}
+      <div className="title-section">
+      <h1 className="title">
+        <Link to="/work" className="title-word">WORK</Link>
+        <Link to="/about" className="title-word">ABOUT</Link>
+        <Link to="/contact" className="title-word">CONTACT</Link>
+      </h1>
+    </div>
+    </div>
     </div>
   );
 };

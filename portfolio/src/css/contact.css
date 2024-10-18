@@ -1,12 +1,12 @@
 @media (max-width: 575.98px) {
-
-.contact {
+  .contact {
     width: 100%;
     height: 100vh;
     background-color: orangered;
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   
   .contact-container {
@@ -16,6 +16,7 @@
     align-items: center;
     text-align: center;
     width: 95%;
+    font-family: var(--fontfamily-2);
   }
   
   .icons {
@@ -43,6 +44,7 @@
     margin-top: 1rem;
   }
 }
+
   /* Media Queries for Responsiveness */
   @media (min-width: 576px) {
     .contact {
@@ -65,8 +67,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-family: var(--fontfamily);
       text-shadow: .1rem .1rem rgb(54, 36, 1);
+      font-family: var(--fontfamily-2);
     }
     
     .icon {
@@ -83,15 +85,61 @@
     
     .contact-title {
       width: 60%;
-      font-size: 6rem;
+      height: auto;
+      font-size: 10rem;
       font-weight: bold;
       text-shadow: .1rem .3rem 5px orchid;
       color: white;
       margin-top: 1rem;
+      font-family: var(--font-family-2);
     }
   }
 
 /* Media Queries for Responsiveness */
 @media screen and (min-width: 884px) {
+  .contact {
+    width: 100%;
+    height: 100vh;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
   
+  .contact-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: .1rem .1rem rgb(54, 36, 1);
+    font-family: var(--fontfamily-2);
+  }
+  
+  .icon {
+    font-size: 4rem;
+    margin: 0px 1rem;
+    color: rgb(109, 9, 106);
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+    color: orchid;
+  }
+  
+  .contact-title {
+    width: 60%;
+    font-size: 6rem;
+    font-weight: bold;
+    text-shadow: .1rem .3rem 5px orchid;
+    color: white;
+    margin-top: 1rem;
+    font-family: var(--fontfamily-2);
+  }
 }

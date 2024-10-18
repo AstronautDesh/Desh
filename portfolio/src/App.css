@@ -4,9 +4,19 @@
   font-family: Muli;
   src: url(./Asset/Fonts/Muli-Light.woff2);
 }
+@font-face {
+  font-family: Macondo;
+  src: url(./Asset/Fonts/Macondo-Regular.woff);
+}
+@font-face {
+  font-family: Fondamento;
+  src: url(./Asset/Fonts/Fondamento-Regular.woff);
+}
 
 :root {
   --font-family: Muli;
+  --font-family-2: Macondo;
+  --font-family-3: Fondamento;
 }
 body, html{
   font-family: var(--font-family);
@@ -26,9 +36,16 @@ body, html{
   font-size: calc(10px + 2vmin);
   color: black;
 }
-.navmenu{
-  font-family: var(--font-family);
+@media screen and (max-width: 575.98px){
+.navmenu {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: orangered;
+  justify-content: flex-start;
+  transition: background-color 0.3s ease-in-out;
+  font-family: var(--font-family-2);
+}
 }
 
 .styled-container,
